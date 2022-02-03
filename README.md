@@ -1,4 +1,5 @@
 # IntelligentSystemsLabUTV/px4_msgs
+
 **This is a fork of PX4/px4_msgs, for internal use only.**
 
 This package contains the ROS2 message definitions of the [PX4 Pro ecosystem](https://px4.io/). Building this package generates all the required interfaces to interface ROS2 nodes with the PX4 autopilot internals, which use the [uORB messaging API](https://dev.px4.io/en/middleware/uorb.html). Currently the messages of this package represent a dependency to [`px4_ros_com` package](https://github.com/PX4/px4_ros_com).
@@ -14,12 +15,3 @@ When uORB message definitions in the [PX4 firmware](https://github.com/PX4/Firmw
 ## Install, build and usage
 
 Check the [`Ament` tutorial](https://index.ros.org/doc/ros2/Tutorials/Ament-Tutorial/) to understand how this can be built inside a worspace. Check the [RTPS/ROS2 Interface](https://dev.px4.io/en/middleware/micrortps.html) section on the PX4 Devguide for further details on how this integrates with the [`px4_ros_com` package](https://github.com/PX4/px4_ros_com).
-
-## Bug tracking and feature requests
-
-Use the [Issues](https://github.com/PX4/px4_msgs/issues) section to create a new issue. Report your issue or feature request [here](https://github.com/PX4/px4_msgs/issues/new).
-
-## Questions and troubleshooting
-
-Reach the PX4 development team on the `#messaging` PX4 Slack channel:
-[![Slack](https://px4-slack.herokuapp.com/badge.svg)](http://slack.px4.io)
