@@ -13,6 +13,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
+find_package(std_msgs REQUIRED)
 
 # find ROS distro
 set(ROS_DISTRO)
@@ -45,6 +46,7 @@ if(NOT "${PX4_MSGS}" STREQUAL "")
                              ${PX4_MSGS}
                              DEPENDENCIES
                              builtin_interfaces
+                             std_msgs
                              ADD_LINTER_TESTS)
 
   # Generate Fast RTPS IDL files (previous to Dashing, so to make the IDL
